@@ -1,0 +1,214 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[usenames,dvipsnames]{color}
+\input{glyphtounicode}
+\definecolor{darkblue}{RGB}{0,0,139}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \textbf{\textcolor{darkblue}{Mahasweta Bhattacharya}}} \\ \vspace{1pt}
+    \small 180 Kennedy Dr $|$ Malden, MA 02148 \\ \vspace{1pt}
+    \small 609-906-1583 $|$ \href{mailto:b.mahasweta24@gmail.com}{\textcolor{darkblue}{\underline{b.mahasweta24@gmail.com}}} $|$ 
+    \href{https://linkedin.com/in/mahasweta-bhattacharya}{\textcolor{darkblue}{\underline{linkedin.com/in/mahasweta-bhattacharya}}} $|$
+    \href{https://github.com/mahaswetabhattacharya24}{\textcolor{darkblue}{\underline{github.com/mahaswetabhattacharya24}}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textcolor{darkblue}{University at Buffalo, State University of New York}}{Buffalo, NY}
+      {Doctor of Philosophy in Biomedical Engineering}{Aug. 2017 -- Jan 2023}
+    \resumeSubheading
+      {\textcolor{darkblue}{University at Buffalo, State University of New York}}{Buffalo, NY}
+      {Master of Science in Electrical Engineering}{Aug. 2015 -- May 2017}
+    \resumeSubheading
+      {\textcolor{darkblue}{West Bengal University of Technology}}{Kolkata, India}
+      {Bachelor of Technology in Electronics and Communication Engineering}{Aug. 2010 -- May 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Scientist}{Sept. 2023 -- Present}
+      {\textcolor{darkblue}{\textbf{Sanofi}}}{Cambridge, MA}
+      \resumeItemListStart
+      \resumeItem{Led the design of an \textbf{agentic-AI pipeline orchestrating Claude-based agents} to autonomously aggregate and summarize multimodal biological evidence for target credentialing; delivered scalable plain-language evidence reports, reduced manual review overhead by \textbf{$>$50\%}, and operationalized \textbf{LLM-driven reasoning in a regulated scientific workflow.}}
+      \resumeItem{Designed a multi-modal foundation model integrating genetics, transcriptomics, and clinical embeddings; achieved \textbf{4$\times$ improvement in causal target recall} over genetics-only baselines and established a transferable representation space for cross-disease generalization.}
+      \resumeItem{Led transcriptomic pharmacodynamics modeling to compare oral vs injectable therapies for Hidradenitis Suppurativa; identified \textbf{superior immune-pathway perturbation} for the oral candidate, enabling preclinical advancement and establishing a robust MoA modeling workflow.}
+      \resumeItem{Developed a harmonized meta-analysis pipeline for public HS transcriptomes, producing a \textbf{mechanistic target-ranking framework} presented at FOCIS 2025 and forming the computational backbone for patient stratification and network modeling.}
+      \resumeItem{Founded a graph-based bispecific discovery platform integrating synergy metrics, biological embeddings, and \textbf{LLM-guided evidence retrieval}; generated \textbf{5 novel bispecific target-pair candidates}.}
+      \resumeItem{Built a scalable disease-mapping and indication-discovery engine scoring \textbf{232 immune indications in 3 weeks} and scaling to \textbf{17,000+ phenotypes}, enabling computational repurposing and whitespace identification.}
+      \resumeItem{Developed an explainable AI-driven target-discovery engine generating \textbf{90+ hypotheses} and advancing \textbf{7 novel targets} into preclinical evaluation; incorporated causal scoring, embedding similarity, and LLM-augmented evidence synthesis.}
+      \resumeItem{Co-led an automated multimodal target-credentialing platform supporting \textbf{30+ therapeutic programs} and enabling \textbf{3 preclinical nominations}; introduced modules for causal inference, uncertainty quantification, and prospective validation.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+  {Postdoctoral Fellow, Radiation Oncology}{Jan 2023 - Sept 2023}
+  {\textcolor{darkblue}{\textbf{Johns Hopkins University School of Medicine}}}{Baltimore, MD}
+  \resumeItemListStart
+    \resumeItem{Developed a GPU-accelerated double-Gaussian proton dose engine as a Python package; achieved \textbf{0.28s} mean patient-plan computation vs \textbf{4.68s} Monte Carlo with \textbf{96\% 3D-gamma agreement (2\%/2mm)}, demonstrating physics-informed acceleration at ML-scale throughput.}
+    \resumeItem{Architected an end-to-end beam-modeling and validation pipeline from \textbf{98 pristine Bragg-peak energies}, benchmarking against measurements, heterogeneous digital phantoms, and multi-site patient plans; built uncertainty profiles highlighting limits in highly heterogeneous regions.}
+    \resumeItem{Advanced a \textbf{deep reinforcement learning framework} for VMAT machine-parameter optimization, producing deliverable prostate plans in \textbf{3.3s} and automated TPS refinement in \textbf{77s}; on a 15-patient external cohort, RL+TPS reduced mean rectum dose vs clinical plans (\textbf{17.4 vs 21.0 Gy}, p=0.024) while maintaining target coverage.}
+    \resumeItem{Integrated RL-generated optimization with a commercial treatment-planning system to create a \textbf{hybrid automated + human-in-the-loop pipeline}, operationalizing ML methods into clinical workflows and demonstrating production-grade feasibility.}
+
+  \resumeItemListEnd
+
+    \resumeSubheading
+  {Research Assistant}{2017 -- 2023}
+  {\textcolor{darkblue}{\textbf{State University of New York at Buffalo}}}{Buffalo, NY}
+  \resumeItemListStart
+    \resumeItem{Analyzed longitudinal two-photon calcium imaging to reconstruct session-wise functional connectomes during motor-skill learning; identified a \textbf{biphasic rewiring trajectory} (early expansion then pruning) and discovered stable L2/3 hub assemblies encoding movement.}
+    \resumeItem{Integrated portable fNIRS and EEG with electric-field–informed GLMs to model cerebellar tDCS response in stroke; uncovered \textbf{0.07--0.13 Hz hemoglobin–EEG coupling signatures} predictive of responders and interpretable non-response patterns.}
+    \resumeItem{Developed the \textbf{FARCI} MATLAB toolbox for fast connectome inference using OASIS spike deconvolution and partial correlations; outperformed existing spike-inference algorithms on NCC and NAOMi benchmarks in accuracy and scalability.}
+    \resumeItem{Demonstrated that low-frequency coupling between frontal HbO (0.07--0.13 Hz) and EEG (1--12 Hz) tracks consciousness in acute brain injury; AMICA embeddings + k-NN achieved \textbf{$>$90\% accuracy} distinguishing conscious vs unresponsive patients and \textbf{$>$99\% accuracy} predicting failure to recover consciousness.}
+    \resumeItem{Built a multi-sensing cerebral organoid platform integrating Vis–NIR spectroscopy (mitochondrial CCO) with MEA-derived spectral exponents; quantified maturation-linked decreases in \textbf{30--50 Hz slope} and CCO activity, enabling functional screening of metabolic–electrophysiological coupling.}
+    \resumeItem{Modeled photothermal vs photobiomodulation mechanisms using Monte Carlo photon transport + bioheat modeling at 630/700/810 nm; predicted \textbf{$<$0.25$^\circ$C scalp} and \textbf{$<$0.04$^\circ$C cortical} heating at 810 nm, supporting safety and highlighting CCO-mediated photobiomodulation as the primary mechanism.}
+
+  \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textcolor{darkblue}{\textbf{Machine Learning:}} Supervised/unsupervised learning, representation learning, causal inference, graph neural networks, multimodal learning, VAEs, uncertainty quantification.
+  \item \textcolor{darkblue}{\textbf{LLMs \& Agentic AI:}} LLM fine-tuning (LoRA/PEFT), RAG pipelines, multi-agent orchestration (Claude/GPT), structured generation, scientific summarization, grounding and consistency checking.
+  \item \textcolor{darkblue}{\textbf{Applied ML:}} End-to-end ML pipelines, feature engineering, embedding similarity search, statistical modeling, Bayesian inference, high-dimensional data analysis.
+  \item \textcolor{darkblue}{\textbf{AI Systems:}} Python (PyTorch, TensorFlow, JAX), CUDA/GPU computing, Docker, HPC (Slurm).
+  \item \textcolor{darkblue}{\textbf{Data Engineering:}} ETL pipelines, data harmonization/QC, SQL/Snowflake, graph databases (Neo4j), S3 data lakes.
+  % \item \textbf{BioAI \& Computational Biology:} Multi-omics integration, causal target discovery, disease network modeling, pathway/DE analysis, biomarker discovery, biological embeddings.
+  % \item \textbf{Neuroscience \& Biomedical Signals:} Calcium imaging analysis, spike inference, fNIRS–EEG processing, consciousness metrics, organoid MEA analysis, frequency-domain modeling.
+\end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}
