@@ -20,6 +20,12 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=ydnt
+]{biblatex}
+\addbibresource{publications.bib}
 \input{glyphtounicode}
 \definecolor{darkblue}{RGB}{0,0,139}
 
@@ -137,6 +143,19 @@
       {Bachelor of Technology in Electronics and Communication Engineering}{Aug. 2010 -- May 2014}
   \resumeSubHeadingListEnd
 
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textcolor{darkblue}{\textbf{Machine Learning:}} Supervised/unsupervised learning, representation learning, causal inference, graph neural networks, multimodal learning, VAEs, uncertainty quantification.
+  \item \textcolor{darkblue}{\textbf{LLMs \& Agentic AI:}} LLM fine-tuning (LoRA/PEFT), RAG pipelines, multi-agent orchestration (Claude/GPT), structured generation, scientific summarization, grounding and consistency checking.
+  \item \textcolor{darkblue}{\textbf{Applied ML:}} End-to-end ML pipelines, feature engineering, embedding similarity search, statistical modeling, Bayesian inference, high-dimensional data analysis.
+  \item \textcolor{darkblue}{\textbf{AI Systems:}} Python (PyTorch, TensorFlow, JAX), CUDA/GPU computing, Docker, HPC (Slurm).
+  \item \textcolor{darkblue}{\textbf{Data Engineering:}} ETL pipelines, data harmonization/QC, SQL/Snowflake, graph databases (Neo4j), S3 data lakes.
+  \item \textcolor{darkblue}{\textbf{Cloud \& Databases:}} AWS (EC2, S3, Batch), SQL, Snowflake, MySQL, S3-based data lakes, scalable storage architectures.
+  % \item \textbf{BioAI \& Computational Biology:} Multi-omics integration, causal target discovery, disease network modeling, pathway/DE analysis, biomarker discovery, biological embeddings.
+  % \item \textbf{Neuroscience \& Biomedical Signals:} Calcium imaging analysis, spike inference, fNIRS–EEG processing, consciousness metrics, organoid MEA analysis, frequency-domain modeling.
+\end{itemize}
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -189,23 +208,79 @@
     \resumeItem{Modeled photothermal vs photobiomodulation mechanisms using Monte Carlo photon transport + bioheat modeling at 630/700/810 nm; predicted \textbf{$<$0.25$^\circ$C scalp} and \textbf{$<$0.04$^\circ$C cortical} heating at 810 nm, supporting safety and highlighting CCO-mediated photobiomodulation as the primary mechanism.}
 
   \resumeItemListEnd
-
-
   \resumeSubHeadingListEnd
 
 
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\nocite{*}
+\printbibliography[heading=none]
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
+%-----------TALKS & PRESENTATIONS-----------
+\section{Talks \& Presentations}
+  \subsection*{\textcolor{darkblue}{As Presenter / Speaker}}
+  \begin{itemize}[leftmargin=*, itemsep=0pt]
+    \item HubXChange AI in Drug Discovery, Boston, MA \hfill 2025
+    \item \textit{Development of a Python package for fast GPU-based proton pencil beam dose calculation}, American Association of Physicists in Medicine (AAPM), Houston, TX \hfill 2023
+    \item \textit{Stability of Motor Cortex Decoders during Learning}, Society for Neuroscience (SfN) Annual Meeting, San Diego, CA \hfill 2022
+    \item \textit{Does Learning Alter Neural Decoders of Motor Cortex?}, Society for Neuroscience Global Connectome, Virtual \hfill 2021
+    \item \textit{Computational modeling of neural activation during transcranial photothermal stimulation}, Society for Neuroscience Annual Meeting, Chicago, IL \hfill 2019
+    \item \textit{Development of bidirectional `mini-Brain' computer interface (mBCI) to modulate functional neural circuits}, Society for Neuroscience Annual Meeting, San Diego, CA \hfill 2017
+  \end{itemize}
+
+  \subsection*{\textcolor{darkblue}{As Co-author}}
+    \begin{itemize}[leftmargin=*, itemsep=0pt]
+      \item \textit{MultiTIE: Sanofi’s Multi-Specific Target Immune Engine}, International Systems for Molecular Biology (ISMB) \& European Conference on Computational Biology (ECCB), Liverpool, UK \hfill 2025
+      \item \textit{HSID: An Integrative Target Discovery Framework for Hidradenitis Suppurativa}, Federation of Clinical Immunology Societies (FOCIS), Boston, MA \hfill 2025
+      \item \textit{Meta-analysis of Genome-wide Association Studies of Asthma Exacerbation}, Federation of Clinical Immunology Societies (FOCIS), Boston, MA \hfill 2025
+      \item \textit{Understanding Neuronal Network Dynamics during Motor Skill Learning through a Model-Free Connectome Inference Method}, Society for Neuroscience Global Connectome, Virtual \hfill 2021
+    \end{itemize}
+
+%-----------HONORS & AWARDS-----------
+
+\section{\textcolor{darkblue}{Honors \& Awards}}
 \begin{itemize}[leftmargin=*, itemsep=0pt]
-  \item \textcolor{darkblue}{\textbf{Machine Learning:}} Supervised/unsupervised learning, representation learning, causal inference, graph neural networks, multimodal learning, VAEs, uncertainty quantification.
-  \item \textcolor{darkblue}{\textbf{LLMs \& Agentic AI:}} LLM fine-tuning (LoRA/PEFT), RAG pipelines, multi-agent orchestration (Claude/GPT), structured generation, scientific summarization, grounding and consistency checking.
-  \item \textcolor{darkblue}{\textbf{Applied ML:}} End-to-end ML pipelines, feature engineering, embedding similarity search, statistical modeling, Bayesian inference, high-dimensional data analysis.
-  \item \textcolor{darkblue}{\textbf{AI Systems:}} Python (PyTorch, TensorFlow, JAX), CUDA/GPU computing, Docker, HPC (Slurm).
-  \item \textcolor{darkblue}{\textbf{Data Engineering:}} ETL pipelines, data harmonization/QC, SQL/Snowflake, graph databases (Neo4j), S3 data lakes.
-  % \item \textbf{BioAI \& Computational Biology:} Multi-omics integration, causal target discovery, disease network modeling, pathway/DE analysis, biomarker discovery, biological embeddings.
-  % \item \textbf{Neuroscience \& Biomedical Signals:} Calcium imaging analysis, spike inference, fNIRS–EEG processing, consciousness metrics, organoid MEA analysis, frequency-domain modeling.
+  \item Member, Institute of Electrical and Electronics Engineers (IEEE) \hfill 2015--Present
+  \item Member, The AI Consortium \hfill 2025--Present
+  \item Winning Solution, Biomedical Knowledge Graph Hackathon, BioLabs Heidelberg, Germany \& Sanofi \hfill 2025
+  \item Finalist, 3 Minute Thesis Competition \hfill 2022
+\end{itemize}
+
+
+%-----------TEACHING-----------
+\section{Teaching}
+
+\subsection*{\textcolor{darkblue}{Course Instructor}}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item \textit{Biomedical Circuits and Signals} \hfill Fall 2017, 2018, 2019
+  \item \textit{Biomedical Engineering Biosignals Lab} \hfill Spring 2018, 2019
+\end{itemize}
+
+%-----------SERVICE-----------
+\section{Professional Service}
+\subsection*{\textcolor{darkblue}{Peer Review}}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item Applied Sciences (MDPI) \hfill 2023--Present
+  \item BioMedInformatics (MDPI) \hfill 2023--Present
+  \item Engineering Applications of Artificial Intelligence (Elsevier) \hfill 2023--Present
+  \item Heliyon (Elsevier) \hfill 2023--Present
+  \item International Journal of Molecular Sciences (MDPI) \hfill 2024--Present
+  \item Mathematics (MDPI) \hfill 2024--Present
+  \item Symmetry (MDPI) \hfill 2024--Present
+  \item Genes (MDPI) \hfill 2023--Present
+\end{itemize}
+
+%-----------SERVICE-----------
+\subsection*{\textcolor{darkblue}{Departmental \& University Service}}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item Graduate Student Ambassador, Dept.\ of Biomedical Engineering, State University of New York at Buffalo \hfill 2018--2019
+\end{itemize}
+
+
+\subsection*{\textcolor{darkblue}{Community Service}}
+\begin{itemize}[leftmargin=*, itemsep=0pt]
+  \item MIT Undergraduate Practice Opportunities Program (MIT UPOP), Mentor Panelist \hfill 2024--Present
+  \item Hopkins Biotech Network Mentor Match Program, Mentor Panelist \hfill 2024
 \end{itemize}
 
 
